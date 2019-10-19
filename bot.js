@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const devs = ['389090790984515594'];
 const db = require('quick.db');
-const premium = ['521297759794495489']
+const premium = ['389090790984515594']
 const client = new Discord.Client();   
 const bot = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['بلاك ولف افضل سيرفر','Type ahelp'];
+    var setGame = ['بلاك ولف افضل سيرفر','Black Wolf Rp'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -226,7 +226,7 @@ message.channel.send(`**${message.author.username}, your :credit_card: balance i
 });
 
 client.on('message', async message => {
-    let amount = 250;
+    let amount = 1000000000000000000;
     if(message.content.startsWith(prefix + "daily")) {
     if(message.author.bot) return;
     if(coolDown.has(message.author.id)) return message.channel.send(`**:stopwatch: | ${message.author.username}, your daily :yen: credits refreshes in \`\`1 Day\`\`.**`);
